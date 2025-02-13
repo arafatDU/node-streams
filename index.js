@@ -8,9 +8,9 @@ const PORT = 8000;
 app.use(status());
 
 app.get("/", (req, res) => {
-	fs.readFile("./OxfordDictionary.txt", (err, data) => {
-		res.end(data);
-	});
+	const stream = fs.createReadStream("./OxfordDictionary.txt", "utf-8");
+	stream.on("data", (chunk) => res.write(chunk));
+	stream.on("on", () => res.end());
 });
 
 app.listen(PORT, () => 
