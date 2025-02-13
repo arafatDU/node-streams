@@ -1,0 +1,29 @@
+{
+  "name": "streams",
+  "version": "1.0.0",
+  "description": "A nodeJS app for streaming a large file in browser, and create zip with file read stream and at the same time write stream in zipper.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/arafatDU/node-streams.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/arafatDU/node-streams/issues"
+  },
+  "homepage": "https://github.com/arafatDU/node-streams#readme",
+  "dependencies": {
+    "express": "^4.21.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.9"
+  }
+}
